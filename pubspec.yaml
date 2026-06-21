@@ -1,0 +1,10 @@
+name: flutter_signing_init
+description: A CLI tool to automatically configure Android release signing for Flutter projects.
+version: 1.0.0
+homepage: https://github.com/ranasheikh64/flutter_signing_init
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+executables:
+  flutter_signing_init: main

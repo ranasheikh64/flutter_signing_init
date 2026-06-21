@@ -1,0 +1,16 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "flutter_signing_init",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.12.1",
+  "flutterRoot": "file:///C:/Users/jasmi/Downloads/flutter_windows_3.44.1-stable/flutter",
+  "flutterVersion": "3.44.1",
+  "pubCache": "file:///C:/Users/jasmi/AppData/Local/Pub/Cache"
+}

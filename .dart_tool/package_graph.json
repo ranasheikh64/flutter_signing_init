@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "flutter_signing_init"
+  ],
+  "packages": [
+    {
+      "name": "flutter_signing_init",
+      "version": "1.0.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}
