@@ -19,7 +19,7 @@ dart pub global activate --source git https://github.com/ranasheikh64/flutter_si
 Navigate to the root directory of your Flutter project and simply run:
 
 ```bash
-flutter_signing_init
+dart pub global run flutter_signing_init:main
 ```
 
 That's it! 🎉 
