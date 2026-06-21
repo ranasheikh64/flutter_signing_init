@@ -2,13 +2,30 @@ import 'dart:io';
 
 void main() async {
   print('================================================');
-  print('🚀 Starting Android Release Signing Setup...');
+  print('🚀 Welcome to Flutter Signing Init CLI 🚀');
+  print('✨ Built by Jronix Development Team ✨');
+  print('================================================');
+  print('Starting Android Release Signing Setup...');
   print('================================================');
 
   final keystoreName = 'key.jks';
   final keyAlias = 'upload';
-  final storePassword = 'medremin_pass';
-  final keyPassword = 'medremin_pass';
+  
+  // Dynamically generate password based on the project's pubspec.yaml
+  String projectName = 'my_app';
+  final pubspecFile = File('pubspec.yaml');
+  if (pubspecFile.existsSync()) {
+    final lines = pubspecFile.readAsLinesSync();
+    for (var line in lines) {
+      if (line.startsWith('name:')) {
+        projectName = line.substring(5).trim();
+        break;
+      }
+    }
+  }
+  
+  final storePassword = '${projectName}_secure2026';
+  final keyPassword = '${projectName}_secure2026';
 
   final androidDir = Directory('android');
   final appDir = Directory('android/app');
@@ -89,6 +106,10 @@ storeFile=../app/$keystoreName
   print('================================================');
   print('🎉 Setup complete! You are ready for Release!');
   print('Run: cd android && ./gradlew signingReport');
+  print('------------------------------------------------');
+  print('Thank you for using Flutter Signing Init!');
+  print('✨ Built by Jronix Development Team ✨');
+  print('Jronix - A Software Solution');
   print('================================================');
 }
 
