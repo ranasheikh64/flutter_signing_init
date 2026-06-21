@@ -66,10 +66,11 @@ void main() async {
         '-dname',
         'CN=Rana, OU=Developer, O=Jronix, L=Dhaka, ST=Dhaka, C=BD'
       ],
+      runInShell: true,
     );
 
     if (result.exitCode != 0) {
-      print('❌ Failed to generate key.jks: \${result.stderr}');
+      print('❌ Failed to generate key.jks: ${result.stderr}');
       return;
     }
     print('✅ key.jks generated successfully!');
